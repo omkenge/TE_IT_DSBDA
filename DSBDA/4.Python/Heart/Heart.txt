@@ -1,0 +1,62 @@
+﻿Data Cleaning
+Removing Missing Values:
+1. Missing values can be handled by dropping rows or columns with missing values or filling them with appropriate values.
+   * dropna(): Removes rows or columns with any missing values.
+   * fillna(): Fills missing values with specified values or using interpolation techniques.
+The code snippet sns.boxplot(x=data1['age']) suggests the use of the Seaborn library (sns) to create a boxplot visualization for the 'age' column of the DataFrame data1.
+To use Seaborn and create a boxplot, you need to make sure that the Seaborn library is installed and imported. Additionally, ensure that you have the necessary data in the 'age' column of the DataFrame data1.
+A boxplot, also known as a box-and-whisker plot, is a popular visualization technique used to display the distribution and statistical summary of a dataset. It provides a concise and informative representation of the data's central tendency, spread, and potential outliers.
+
+
+Data integration is the process of combining data from multiple sources into a unified format or structure. Python provides several libraries and functions that can facilitate data integration tasks. Here's an overview of some commonly used functions and techniques for data integration in Python:
+Concatenation:
+1. The pd.concat() function from the pandas library can be used to concatenate or append multiple DataFrames along a particular axis (rows or columns).
+Merging and Joining:
+2. The pd.merge() function in pandas allows you to perform database-style joins on DataFrames based on common columns or indices. You can specify the type of join (inner, outer, left, right) to control how the data is combined.
+Appending and Extending:
+3. The append() method in pandas DataFrame allows you to append rows from one DataFrame to another. The extend() method can be used to extend a list or another iterable with elements from another list or iterable.
+Combining with Dictionary:
+4. Python dictionaries can be used to merge or combine data from different sources. By combining dictionaries, you can merge the data using a common key.
+Data Integration Libraries:
+5. There are libraries in Python that specifically focus on data integration tasks. For example, the recordlinkage library provides tools for record linkage and deduplication, which are common tasks in data integration.
+Data transformation in Python involves manipulating the structure or content of the data to prepare it for further analysis or to meet specific requirements. Python provides various functions, libraries, and techniques for performing data transformation tasks. Here are some commonly used commands and techniques for data transformation in Python:
+1. Data Cleaning:
+   * Removing missing values: dropna(), fillna()
+   * Handling duplicates: duplicated(), drop_duplicates()
+   * Correcting data types: astype()
+   * Handling inconsistent or erroneous values: Filtering, conditional statements, or regular expressions
+2. Data Reshaping:
+   * Pivot tables: pivot_table() in pandas
+   * Melting: melt() in pandas
+   * Stack and unstack: stack(), unstack() in pandas
+3. Data Aggregation:
+   * Grouping data: groupby() in pandas
+   * Applying aggregate functions: sum(), mean(), count(), etc.
+4. Data Scaling and Normalization:
+   * Min-Max scaling: MinMaxScaler in scikit-learn
+   * Standardization: StandardScaler in scikit-learn
+5. Data Encoding and Decoding:
+   * Label encoding: LabelEncoder in scikit-learn
+   * One-hot encoding: OneHotEncoder in scikit-learn
+   * Encoding/decoding functions: encode(), decode()
+6. Data Sorting and Reordering:
+   * Sorting: sort_values() in pandas
+   * Reordering columns: reindex() in pandas
+7. Data Filtering and Subsetting:
+   * Boolean indexing: df[df['column'] > value]
+   * Selecting specific columns: df[['col1', 'col2']]
+   * Selecting rows based on conditions: df.loc[condition]
+KNN
+K-Nearest Neighbours is one of the most basic yet essential classification algorithms in Machine Learning. It belongs to the supervised learning domain and finds intense application in pattern recognition, data mining, and intrusion detection.
+It is widely disposable in real-life scenarios since it is non-parametric, meaning, it does not make any underlying assumptions about the distribution of data (as opposed to other algorithms such as GMM, which assume a Gaussian distribution of the given data). We are given some prior data (also called training data), which classifies coordinates into groups identified by an attribute.
+As an example, consider the following table of data points containing two features: 
+
+
+Advantages of the KNN Algorithm
+* Easy to implement as the complexity of the algorithm is not that high.
+* Adapts Easily – As per the working of the KNN algorithm it stores all the data in memory storage and hence whenever a new example or data point is added then the algorithm adjusts itself as per that new example and has its contribution to the future predictions as well.
+* Few Hyperparameters – The only parameters which are required in the training of a KNN algorithm are the value of k and the choice of the distance metric which we would like to choose from our evaluation metric.
+Disadvantages of the KNN Algorithm
+* Does not scale – As we have heard about this that the KNN algorithm is also considered a Lazy Algorithm. The main significance of this term is that this takes lots of computing power as well as data storage. This makes this algorithm both time-consuming and resource exhausting.
+* Curse of Dimensionality – There is a term known as the peaking phenomenon according to this the KNN algorithm is affected by the curse of dimensionality which implies the algorithm faces a hard time classifying the data points properly when the dimensionality is too high.
+* Prone to Overfitting – As the algorithm is affected due to the curse of dimensionality it is prone to the problem of overfitting as well. Hence generally feature selection as well as dimensionality reduction techniques are applied to deal with this problem.

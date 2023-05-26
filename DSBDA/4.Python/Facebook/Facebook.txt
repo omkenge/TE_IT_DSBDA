@@ -1,0 +1,21 @@
+﻿What is DataSubset?
+In Python, the term "datasubset" typically refers to a portion or a subset of a larger dataset. It represents a smaller portion of data extracted from a larger dataset based on certain criteria or conditions
+
+
+What is Dataframe ?
+DataFrame is a 2-dimensional labeled data structure with columns of potentially different types
+
+
+
+
+loc() – location
+The df.loc[1] syntax is typically used in pandas to access a specific row or subset of rows from a DataFrame based on a label-based index. Here's an example of how you can use df.loc[1] to retrieve the row at index label 1 from a DataFrame:
+iloc()
+The df.iloc[[1, 5, 7]] syntax is used in pandas to access specific rows or a subset of rows from a DataFrame based on integer-based indexing. Here's an example of how you can use df.iloc[[1, 5, 7]] to retrieve the rows at index positions 1, 5, and 7 from a DataFrame:
+
+
+A pivot table is a data summarization tool in spreadsheet software or data analysis libraries like pandas in Python. It allows you to reorganize and summarize data from a dataset to provide a different perspective or analysis of the information.
+In a pivot table, you can select specific columns from your dataset to act as the "index" or "row labels" and other columns to act as "columns" or "column labels". Then, you can choose one or more columns to be used as "values" or the data that will be summarized.
+The pivot table will then group and aggregate the data based on the row and column labels, applying functions such as sum, count, average, etc., to calculate the summarized values for the intersections of rows and columns.
+Pivot tables are useful for analyzing and summarizing large datasets, allowing you to quickly and easily generate insights from your data.
+Here's an example using pandas to create a pivot table:
